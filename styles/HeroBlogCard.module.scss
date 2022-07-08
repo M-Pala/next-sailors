@@ -1,0 +1,38 @@
+.mainContainer{
+    width: 26rem;
+    height: 12rem;
+    margin: 1rem;
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 2.5px;
+    background: #000000dd;
+    color: #fff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.292);
+
+    h4{
+        margin-bottom: 1rem;
+    }
+
+    h5{
+        font-weight: 500;
+        color: #CCE7EA;
+    }
+
+    .bottomContainer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 2rem;
+
+
+        button{
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-weight: bold;
+            font-size: medium;
+            color: #beffff;
+        }
+    }
+}

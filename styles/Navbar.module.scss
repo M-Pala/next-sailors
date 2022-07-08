@@ -1,0 +1,26 @@
+
+
+.navContainer{
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 1.75rem 0;
+  }
+  
+  .navLogoContainer{
+    // width: 10rem;
+    padding-left: 5rem;
+  }
+  
+  .navLinksContainer{
+    width: 30rem; 
+    padding-left: 1rem;
+    padding-right: 5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
