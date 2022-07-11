@@ -1,0 +1,32 @@
+.mainContainer{
+    color: #fff;
+    display: flex;
+    // flex-wrap: wrap;
+    width: 40%;
+    margin: 2rem;
+
+    img{
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+    .textContainer{
+        margin-left: 3rem;
+
+        h3{
+            font-weight: 600;
+        }
+
+        p{
+            color: #aaa;
+            margin: 1rem 0;
+        }
+
+        button{
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-size: medium;
+            color: #beffff;
+        }
+    }
+}

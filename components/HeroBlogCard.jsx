@@ -1,15 +1,16 @@
 import React from 'react'
 import style from '../styles/HeroBlogCard.module.scss'
 import {AiOutlineUser} from 'react-icons/ai'
+import Link from 'next/link'
 
-const HeroBlogCard = () => {
+const HeroBlogCard = ({blog}) => {
   return (
     <div className={style.mainContainer}>
-        <h4>Title</h4>
-        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, eligendi corrupti ad deleniti esse assumenda eveniet ipsum neque culpa? Ullam?</h5>
+        <h4>{blog.title}</h4>
+        <h5>{blog.subtitle}</h5>
         <div className={style.bottomContainer}>
-            <p><AiOutlineUser/> Madhav</p>
-            <button>Learn More</button>
+            <p><AiOutlineUser/> {blog.author}</p>
+            <Link href={`/blog/${blog.id}`}><button>Learn More</button></Link>
         </div>
     </div>
   )

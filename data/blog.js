@@ -1,6 +1,7 @@
 export const blogs = [
     {
         id : 1,
+        author : 'Madhav',
         title : 'Advanced Shipping Systems',
         subtitle : 'Systems for advanced sailors and shipping systems for shipping worldwide',
         image : 'https://images.unsplash.com/photo-1585713181935-d5f622cc2415?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80',
@@ -16,6 +17,7 @@ export const blogs = [
     },
     {
         id : 2,
+        author : 'Bruce',
         title : 'Global System Shipping',
         subtitle : 'Shipping system for gloabal system sailor sea water waves',
         image : 'https://images.unsplash.com/photo-1524522173746-f628baad3644?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1231&q=80',
@@ -31,6 +33,7 @@ export const blogs = [
     },
     {
         id : 3,
+        author : 'Clark',
         title : 'Sailor Ships Transform',
         subtitle : 'System sailor sea water waves shipping systems for shipping worldwide',
         image : 'https://images.unsplash.com/photo-1530890448995-4d82724f702c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80',
@@ -45,10 +48,11 @@ export const blogs = [
         Lectus vestibulum mattis ullamcorper velit. Magna fringilla urna porttitor rhoncus dolor purus non. Ornare aenean euismod elementum nisi quis. Vitae sapien pellentesque habitant morbi tristique senectus. A condimentum vitae sapien pellentesque habitant morbi tristique senectus. Tellus pellentesque eu tincidunt tortor aliquam. Nisl tincidunt eget nullam non nisi est sit amet facilisis. Purus in mollis nunc sed. Ullamcorper a lacus vestibulum sed arcu non. Rutrum quisque non tellus orci ac auctor augue mauris. Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. In hac habitasse platea dictumst quisque sagittis.`
     },
     {
-        id : 1,
+        id : 4,
         title : 'Advanced Shipping Systems',
+        author : 'Diana',
         subtitle : 'Systems for advanced sailors and shipping systems for shipping worldwide',
-        image : 'https://images.unsplash.com/photo-1585713181935-d5f622cc2415?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80',
+        image : 'https://images.unsplash.com/photo-1523005505536-da8021509536?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
         content : `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare quam viverra orci sagittis eu volutpat. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. Faucibus turpis in eu mi bibendum neque egestas congue quisque. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus. Pretium nibh ipsum consequat nisl vel pretium lectus. Sit amet consectetur adipiscing elit duis tristique sollicitudin. Eu tincidunt tortor aliquam nulla facilisi. Vitae nunc sed velit dignissim sodales ut eu. Dictumst vestibulum rhoncus est pellentesque elit. Sed arcu non odio euismod lacinia at quis risus. Iaculis nunc sed augue lacus viverra vitae congue eu consequat. Tellus mauris a diam maecenas sed enim ut sem. Pretium viverra suspendisse potenti nullam. Libero id faucibus nisl tincidunt.
 
         Dolor sit amet consectetur adipiscing elit. A pellentesque sit amet porttitor eget dolor morbi non arcu. Morbi leo urna molestie at. Non pulvinar neque laoreet suspendisse interdum. Urna et pharetra pharetra massa massa. Sit amet porttitor eget dolor morbi non arcu. Pulvinar neque laoreet suspendisse interdum. Bibendum ut tristique et egestas quis ipsum suspendisse. Eu non diam phasellus vestibulum lorem sed risus ultricies. Quam pellentesque nec nam aliquam. Augue eget arcu dictum varius duis at. Curabitur vitae nunc sed velit dignissim sodales ut.
@@ -60,10 +64,11 @@ export const blogs = [
         Lectus vestibulum mattis ullamcorper velit. Magna fringilla urna porttitor rhoncus dolor purus non. Ornare aenean euismod elementum nisi quis. Vitae sapien pellentesque habitant morbi tristique senectus. A condimentum vitae sapien pellentesque habitant morbi tristique senectus. Tellus pellentesque eu tincidunt tortor aliquam. Nisl tincidunt eget nullam non nisi est sit amet facilisis. Purus in mollis nunc sed. Ullamcorper a lacus vestibulum sed arcu non. Rutrum quisque non tellus orci ac auctor augue mauris. Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. In hac habitasse platea dictumst quisque sagittis.`
     },
     {
-        id : 1,
-        title : 'Advanced Shipping Systems',
-        subtitle : 'Systems for advanced sailors and shipping systems for shipping worldwide',
-        image : 'https://images.unsplash.com/photo-1585713181935-d5f622cc2415?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80',
+        id : 5,
+        title : 'Mission Shipping Systems',
+        author : 'Barry',
+        subtitle : 'Container Mission ship for advanced sailors property and  shipping systems felis donec et odio pellentesque diam. Rhoncus aenean vel elit scelerisque. for shipping worldwide',
+        image : 'https://images.unsplash.com/photo-1496347326319-2935d381b307?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1333&q=80',
         content : `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare quam viverra orci sagittis eu volutpat. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. Faucibus turpis in eu mi bibendum neque egestas congue quisque. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus. Pretium nibh ipsum consequat nisl vel pretium lectus. Sit amet consectetur adipiscing elit duis tristique sollicitudin. Eu tincidunt tortor aliquam nulla facilisi. Vitae nunc sed velit dignissim sodales ut eu. Dictumst vestibulum rhoncus est pellentesque elit. Sed arcu non odio euismod lacinia at quis risus. Iaculis nunc sed augue lacus viverra vitae congue eu consequat. Tellus mauris a diam maecenas sed enim ut sem. Pretium viverra suspendisse potenti nullam. Libero id faucibus nisl tincidunt.
 
         Dolor sit amet consectetur adipiscing elit. A pellentesque sit amet porttitor eget dolor morbi non arcu. Morbi leo urna molestie at. Non pulvinar neque laoreet suspendisse interdum. Urna et pharetra pharetra massa massa. Sit amet porttitor eget dolor morbi non arcu. Pulvinar neque laoreet suspendisse interdum. Bibendum ut tristique et egestas quis ipsum suspendisse. Eu non diam phasellus vestibulum lorem sed risus ultricies. Quam pellentesque nec nam aliquam. Augue eget arcu dictum varius duis at. Curabitur vitae nunc sed velit dignissim sodales ut.

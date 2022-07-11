@@ -5,6 +5,15 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html{
+  scroll-behavior: smooth
+}
+
 body{
   background: #031520;
+  color: #fff;
+}
+
+a{
+  text-decoration: none;
 }
