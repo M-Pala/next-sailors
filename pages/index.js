@@ -29,8 +29,6 @@ export default function Home({blogs}) {
         {heroBlogs.map((blog)=>{
           return <HeroBlogCard blog={blog}/>
         })}
-        {/* <HeroBlogCard/>
-        <HeroBlogCard/> */}
       </section>
 
       
@@ -39,8 +37,6 @@ export default function Home({blogs}) {
         {secondaryHeroBlogs.map((blog)=>{
           return <HeroBlogCardSecondary blog={blog}/>
         })}
-        
-        {/* <HeroBlogCardSecondary imgSrc = 'https://images.unsplash.com/photo-1657296950265-e17c3db4e85a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'/> */}
       </section>
 
       <section id={style.heroCardTertioryContainer}>
@@ -61,9 +57,7 @@ export default function Home({blogs}) {
 }
 
 
-export async function getStaticProps({req}){
-  // const protocol = req.headers['x-forwarded-proto'] || 'http'
-  // const baseUrl = req ? `${serve}://${req.headers.host}` : ''
+export async function getStaticProps(){
   const response = await fetch(`${server}/api/blogs/`)
   const data = await response.json()
 
