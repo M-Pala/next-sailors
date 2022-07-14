@@ -9,7 +9,7 @@ const SingleBlog = ({blogDetails : {id, title, subtitle, image, content, author,
         <div className={style.mainContainer}>
           <h1>{title}</h1>
           <div className={style.imageContainer}>
-            <img src={image} alt={blog.title}/>
+            <img src={image} alt={title}/>
           </div>
           <h4>{subtitle}</h4>
           <br/>
