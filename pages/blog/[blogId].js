@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
-import style from '../../styles/SingleBlog.module.scss'
+import style from '../../styles/Singleblog.module.scss'
 
-const SingleBlog = ({blogDetails : {id, title, subtitle, image, content, author, error}}) => {
+const SingleBlog = ({blogDetails : { title, subtitle, image, content, author}}) => {
 
   return (
     <>      
@@ -26,12 +26,7 @@ export default SingleBlog
 
 export async function getServerSideProps({params:{blogId}}){
   const response = await fetch(`http://localhost:3000/api/blogs/${blogId}`)
-  // if(response){
-  //   const data = await response.json()
-  // }
-  // else {
-  //   const data = 'wrong'
-  // }
+
   const data = await response.json()
   return{
       props : {
