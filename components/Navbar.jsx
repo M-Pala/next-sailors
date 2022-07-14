@@ -1,13 +1,18 @@
 import React, { useEffect, useState } from 'react'
 import style from '../styles/Navbar.module.scss'
 import Link from 'next/link'
-import {AiOutlineHome,AiOutlineInfoCircle, AiOutlineMail} from 'react-icons/ai'
-import {BiNews} from 'react-icons/bi'
+import { AiOutlineHome,AiOutlineInfoCircle, AiOutlineMail} from 'react-icons/ai'
+import {BiCollapse, BiMenuAltRight, BiNews} from 'react-icons/bi'
 
 const Navbar = () => {
 
-    // const [offset, setOffset] = useState(0)
-    const [navColor, setNavColor] = useState(false)
+  const [navColor, setNavColor] = useState(false)
+  const [open, setOpen] = useState(false)
+
+  const opneMenu = () =>{
+    setOpen(!open)
+  }
+
   useEffect(()=>{
 
     function navColorChange(){
@@ -26,15 +31,24 @@ const Navbar = () => {
     <>
       <div className={`${style.navContainer} ${navColor ? style.navColored : null}`}>
           <div className={style.navLogoContainer}>
-              <h3>Next-Sailors</h3>
+          <Link href={'/'}><h3>Next-Sailors</h3></Link>
           </div>
           <div className={style.navLinksContainer}>
               <div><Link href={'/'}><AiOutlineHome/></Link></div>
-              <div><Link href={'/about'}><AiOutlineInfoCircle/></Link></div>
               <div><Link href={'/blog'}><BiNews/></Link></div>
-              <div><AiOutlineMail/></div>
-          </div>    
+              <div><Link href={'/about'}><AiOutlineInfoCircle/></Link></div>
+              <div><Link href={'/contactUs'}><AiOutlineMail/></Link></div>
+          </div>
       </div>
+          <div onClick={opneMenu}>
+            {open ?<BiCollapse className={style.mdMenu} /> :  <BiMenuAltRight className={style.mdMenu} />}
+          </div>
+          {open && <div className={style.resNavLinksContainer}>
+              <div onClick={()=>setOpen(false)}><Link href={'/'} ><AiOutlineHome/></Link></div>
+              <div onClick={()=>setOpen(false)}><Link href={'/blog'} ><BiNews/></Link></div>
+              <div onClick={()=>setOpen(false)}><Link href={'/about'} ><AiOutlineInfoCircle/></Link></div>
+              <div onClick={()=>setOpen(false)}><Link href={'/contactUs'} ><AiOutlineMail/></Link></div>
+          </div>}
 
   </>
   )

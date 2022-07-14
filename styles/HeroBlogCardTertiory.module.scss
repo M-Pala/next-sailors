@@ -1,7 +1,9 @@
+@import 'breakpoints';
+
 .mainContainer{
     color: #fff;
     display: flex;
-    // flex-wrap: wrap;
+    
     width: 40%;
     margin: 2rem;
 
@@ -27,6 +29,16 @@
             background: none;
             font-size: medium;
             color: #beffff;
+        }
+    }
+
+    @include md{
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        .textContainer{
+            margin: 1rem 0;
         }
     }
 }

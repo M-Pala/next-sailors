@@ -1,14 +1,15 @@
+import Link from 'next/link'
 import React from 'react'
 import style from '../styles/HeroBlogCardTertiory.module.scss'
 
-const HeroBlogCardTertiory = ({icon}) => {
+const HeroBlogCardTertiory = ({icon, blog}) => {
   return (
     <div className={style.mainContainer}>
       <img src={icon}/>
       <div className={style.textContainer}>
-        <h3>Title</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem quod, minus voluptate aspernatur hic modi vero labore et autem at ducimus harum aut porro, beatae minima non magnam facilis quasi!</p>
-        <button>Learn More</button>
+        <h3>{blog.title}</h3>
+        <p>{blog.subtitle}</p>
+        <Link href={`/blog/${blog.id}`}><button>Learn More</button></Link>
       </div>
     </div>
   )

@@ -1,8 +1,8 @@
 @import 'breakpoints';
 
-#aboutContainer{
+#contactUsContainer{
     padding: 10rem 5rem;
-    padding-right: 0;
+    padding-left: 0;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -17,12 +17,13 @@
         font-size: xxx-large;
         margin-bottom: 1.5rem;
     }
-
-    p{
-        font-size: medium;
-        font-weight: 300;
-        margin-bottom: 1rem;
-        width: 60%;
+    .secondaryContainer{
+        background: #00000055;
+        width: 40rem;
+        z-index: 2;
+        padding: 1rem 2rem;
+        border-radius: 1px;
+        height: fit-content;
     }
 
     @include md{
@@ -35,9 +36,6 @@
         div{
             min-width: 100px;
         }
-        p{
-            width: 100%;
-        }
     }
 }
 
@@ -45,9 +43,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    height: 100vh;
     vertical-align: top;
-    z-index: -1;
     img{
         object-fit: cover;
         vertical-align: top;
@@ -62,7 +58,6 @@
         height: 100%;
         background: linear-gradient(90deg, #031520, #031520ee, #031520cc, #000000aa,#00000088,#00000066,#00000044,#00000022,#00000000);
     }
-
     @include md{
         height: fit-content;
         img{
@@ -74,3 +69,55 @@
     }
 
 }
+
+.formContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    row-gap: 1rem;
+    margin-top: 3rem;
+    input, textarea{
+        width: 100%;
+        height: 2rem;
+        background: #000;
+        border: none;
+        border-radius: 1px;
+        padding-left: 1rem;
+        color: #fff;
+    }
+    textarea{
+        height: 10rem;
+    }
+    .btnContainer{
+        width: 100%;
+        // text-align: left;
+    }
+    button{
+        padding: 0.5rem 2rem;
+        font-size: large;
+        font-weight: 400;
+        background: none;
+        border: 1px solid #fff;
+        color: #fff;
+        margin: 1rem 0;
+        transition: 100ms all ease-in-out;
+    }
+    button:hover{
+        cursor: pointer;
+        background: #ffffff;
+        color: #000;
+    }
+
+    @include md{
+        input{
+            font-size: 1rem;
+            height: 3rem;
+        }
+        textarea{
+            font-size: 1rem;
+            padding-top: 1rem;
+        }
+    }
+}
+

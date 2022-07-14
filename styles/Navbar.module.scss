@@ -1,23 +1,43 @@
+@import 'breakpoints';
+
 .navColored{
-  background-color: #000000cc;
+  background: rgba( 9, 9, 9, 0.5 );
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur( 8.5px );
+  -webkit-backdrop-filter: blur( 8.5px );
 }
 
 .navContainer{
     color: #fff;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
     position: fixed;
     width: 100%;
     padding: 1.75rem 0;
     z-index: 10;
     transition: all 250ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    
+  @include md{
+    padding: 1.5rem;
+    display: block;
+    height: 5rem;
+  }
   }
   
   .navLogoContainer{
-    // width: 10rem;
     padding-left: 5rem;
+    h3{
+      cursor: pointer;
+      font-weight: 500;
+    }
+    @include md{
+      padding: 0;
+      h3{
+        width: fit-content;
+        text-align: center;
+      }
+    }
   }
   
   .navLinksContainer{
@@ -26,6 +46,57 @@
     padding-right: 5rem;
     display: flex;
     justify-content: space-between;
-    
+    & > div{
+      cursor: pointer;
+    }
+    @include md{
+      display: none;
+    }
   }
 
+.mdMenu{
+  display: none;
+  @include md{
+    display: block;
+    position: fixed;
+    right: 1rem; 
+    top: 1rem; 
+    font-size: 2rem; 
+    z-index: 11;
+  }
+}
+
+.resNavLinksContainer{
+  display: none;
+  // width: 30rem; 
+  // padding-left: 1rem;
+  // padding-right: 5rem;
+  & > div{
+    cursor: pointer;
+  }
+  transition: all 5000ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  @include md{
+    display: flex;
+    justify-content: space-between;
+    background: rgba( 9, 9, 9, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
+    z-index: 10;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 0;
+    right: 0;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 4rem;
+    padding: 0;
+    div{
+      width: 100%;
+      text-align: center;
+    }
+    
+  }
+}

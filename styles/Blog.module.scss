@@ -1,6 +1,7 @@
+@import 'breakpoints';
+
 .mainContainer{
     padding: 10rem 0 0 0;
-
 
     width: 100%;
     h1{
@@ -8,6 +9,12 @@
         font-weight: 500;
         font-size: xxx-large;
         text-align: center;
+    }
+
+    @include md{
+        h1{
+            font-size: xx-large;
+        }
     }
 }
 

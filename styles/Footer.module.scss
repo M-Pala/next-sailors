@@ -1,6 +1,7 @@
 #footer{
     position: relative;
     width: 100%;
+    left: 0;
     bottom: 0;
     background: #eee;
     text-align: center;
@@ -9,7 +10,14 @@
         font-weight: 500;
         padding: 1rem;
     }
-    p{
+    
+    div{
         padding: 1rem;
+        .link{
+            display: inline-block;
+            text-decoration: dashed;
+            cursor: pointer;
+            padding: 0;
+        }
     }
 }

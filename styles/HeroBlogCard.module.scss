@@ -5,9 +5,11 @@
     margin-top: 2rem;
     padding: 2rem;
     border-radius: 2.5px;
-    background: #000000dd;
     color: #fff;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.292);
+    background: rgba( 9, 9, 9, 0.3 );
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
 
     h4{
         margin-bottom: 1rem;
