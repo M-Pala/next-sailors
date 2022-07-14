@@ -14,7 +14,7 @@ const Blogs = ({blogs}) => {
                 return (
                     <div key={blog.id} className={style.cardContainer}>
                         <div className={style.imageContainer}>
-                            <img src={blog.image} alt="title" />
+                            <img src={blog.image} alt={blog.title} />
                         </div>
                         <div className={style.textContainer}>
                             <h4>{blog.title}</h4>

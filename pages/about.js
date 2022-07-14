@@ -19,7 +19,7 @@ const about = () => {
         </div>
         <div className={style.imageContainer}>
             <div className={style.overlay}></div>
-            <img src='https://images.unsplash.com/photo-1582647106236-c3f16cb392db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=738&q=80'/>
+            <img src='https://images.unsplash.com/photo-1582647106236-c3f16cb392db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=738&q=80' alt='about'/>
         </div>
       </section>
   )

@@ -6,7 +6,7 @@ import style from '../styles/HeroBlogCardTertiory.module.scss'
 const HeroBlogCardTertiory = ({icon, blog}) => {
   return (
     <div className={style.mainContainer}>
-      <img src={icon}/>
+      <img src={icon} alt='icon'/>
       <div className={style.textContainer}>
         <h3>{blog.title}</h3>
         <p>{blog.subtitle}</p>

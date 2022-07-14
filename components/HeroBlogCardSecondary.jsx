@@ -8,7 +8,7 @@ const HeroBlogCardSecondary = ({blog}) => {
   return (
     <div className={style.mainContainer}>
         <div className={style.imageContainer}>
-            <img src={blog.image} alt="title" />
+            <img src={blog.image} alt={blog.title} />
         </div>
         <div className={style.textContainer}>
             <h4>{blog.title}</h4>
