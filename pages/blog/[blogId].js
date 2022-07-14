@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
-import style from '../../styles/Singleblog.module.scss'
+import style from '../../styles/SingleBlog.module.scss'
 
 const SingleBlog = ({blogDetails : { title, subtitle, image, content, author}}) => {
 
