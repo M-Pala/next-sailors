@@ -1,6 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import { AiOutlineUser } from 'react-icons/ai'
-import HeroBlogCardSecondary from '../../components/BgVideo'
 import style from '../../styles/Blog.module.scss'
 import Link from 'next/link'
 
@@ -12,7 +12,7 @@ const Blogs = ({blogs}) => {
             <h1>Our Latest Stories</h1>
             {blogs.map((blog)=>{
                 return (
-                    <div className={style.cardContainer}>
+                    <div key={blog.id} className={style.cardContainer}>
                         <div className={style.imageContainer}>
                             <img src={blog.image} alt="title" />
                         </div>

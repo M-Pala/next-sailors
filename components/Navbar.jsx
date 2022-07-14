@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react'
 import style from '../styles/Navbar.module.scss'
 import Link from 'next/link'
 import { AiOutlineHome,AiOutlineInfoCircle, AiOutlineMail} from 'react-icons/ai'
-import {BiCollapse, BiMenuAltRight, BiNews} from 'react-icons/bi'
+import {BiX, BiMenuAltRight, BiNews} from 'react-icons/bi'
+import {GrClose} from 'react-icons/gr'
 
 const Navbar = () => {
 
@@ -41,7 +42,7 @@ const Navbar = () => {
           </div>
       </div>
           <div onClick={opneMenu}>
-            {open ?<BiCollapse className={style.mdMenu} /> :  <BiMenuAltRight className={style.mdMenu} />}
+            {open ?<BiX className={style.mdMenu} /> :  <BiMenuAltRight className={style.mdMenu} />}
           </div>
           {open && <div className={style.resNavLinksContainer}>
               <div onClick={()=>setOpen(false)}><Link href={'/'} ><AiOutlineHome/></Link></div>

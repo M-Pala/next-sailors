@@ -28,7 +28,7 @@ export default function Home({blogs}) {
       
       <section id='HeroCardContainer' className={style.heroCardContainer}>
         {heroBlogs.map((blog)=>{
-          return <HeroBlogCard blog={blog}/>
+          return <HeroBlogCard key={blog.id} blog={blog}/>
         })}
       </section>
 
@@ -36,7 +36,7 @@ export default function Home({blogs}) {
 
       <section id={style.heroCardSecondaryContainer}>
         {secondaryHeroBlogs.map((blog)=>{
-          return <HeroBlogCardSecondary blog={blog}/>
+          return <HeroBlogCardSecondary key={blog.id} blog={blog}/>
         })}
       </section>
 
