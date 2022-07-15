@@ -10,8 +10,8 @@ import Link from 'next/link'
 
 export default function Home({blogs}) {
 
-  const heroBlogs = blogs.slice(0,3)
-  const secondaryHeroBlogs = blogs.slice(3,5)
+  // const heroBlogs = blogs.slice(0,3)
+  // const secondaryHeroBlogs = blogs.slice(3,5)
 
   return(
     <h1>Hello</h1>
