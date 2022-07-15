@@ -3,6 +3,7 @@ import React from 'react'
 import { AiOutlineUser } from 'react-icons/ai'
 import style from '../../styles/Blog.module.scss'
 import Link from 'next/link'
+import { server } from '../../config'
 
 const Blogs = ({blogs}) => {
 
@@ -34,7 +35,7 @@ const Blogs = ({blogs}) => {
 export default Blogs
 
 export async function getStaticProps(){
-    const response = await fetch('http://localhost:3000/api/blogs/')
+    const response = await fetch(`${server}/api/blogs/`)
     const data = await response.json()
 
     return{
