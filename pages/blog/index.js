@@ -34,7 +34,7 @@ const Blogs = ({blogs}) => {
 
 export default Blogs
 
-export async function getStaticProps(){
+export async function getServerSideProps(){
     const response = await fetch(`${server}/api/blogs/`)
     const data = await response.json()
 
