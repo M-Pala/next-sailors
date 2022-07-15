@@ -17,7 +17,7 @@ const Thanks = () => {
        }, [redirectSeconds]);
        // eslint-disable-line react-hooks/exhaustive-deps
   return (
-    <h1 style={{padding : '50vh', textAlign: 'center'}}>
+    <h1 style={{padding : '50vh 0', textAlign: 'center'}}>
         Thanks... You will be redirected to home in {redirectSeconds} secs
     </h1>
   )
