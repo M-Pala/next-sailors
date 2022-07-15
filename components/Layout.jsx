@@ -1,27 +1,27 @@
-import React from 'react'
-import Head from 'next/head'
-import Navbar from './Navbar'
-import Footer from './Footer'
+// import React from 'react'
+// import Head from 'next/head'
+// import Navbar from './Navbar'
+// import Footer from './Footer'
 
-const Layout = ({children}) => {
-  return (
-    <>
-        <Head>
-            Latest News
-        </Head>
-        <div>
-            <header>
-                <Navbar/>
-            </header>
-            <main>
-                {children}
-            </main>
-            <footer>
-                <Footer/>
-            </footer>
-        </div>
-    </>
-  )
-}
+// const Layout = ({children}) => {
+//   return (
+//     <>
+//         <Head>
+//             Latest News
+//         </Head>
+//         <div>
+//             <header>
+//                 <Navbar/>
+//             </header>
+//             <main>
+//                 {children}
+//             </main>
+//             <footer>
+//                 <Footer/>
+//             </footer>
+//         </div>
+//     </>
+//   )
+// }
 
-export default Layout
+// export default Layout
