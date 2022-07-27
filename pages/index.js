@@ -6,7 +6,7 @@ import HeroTechnologies from '../components/HeroTechnologies'
 import style from '../styles/Home.module.scss'
 import { server } from '../config'
 import Link from 'next/link'
-
+import {motion} from 'framer-motion'
 
 export default function Home({blogs}) {
 
@@ -17,8 +17,24 @@ export default function Home({blogs}) {
       <main>
         <BgVideo/>
         <div className={style.heroContent}>
-          <h1>Welcome to <span>World's Greatest Sailors</span></h1>
-          <h4><i>Build. Ship. Transport</i></h4>
+          <motion.h1 initial='hidden' animate='visible' variants={{
+            hidden:{
+              scale: .9,
+              y: 10,
+              opacity: 0
+            },
+            visible:{
+              scale: 1,
+              y: 0,
+              opacity: 1,
+              transition: {
+                delay: .5,
+                duration: .5,
+                ease: 'backInOut'
+              }
+            }
+          }}>Welcome to <span>World's Greatest Sailors</span></motion.h1>
+          <h4><i><motion.span>Build.</motion.span><motion.span>Ship.</motion.span><motion.span> Transport</motion.span></i></h4>
           <div className={style.btnContainer}>
           <Link href={'#HeroCardContainer'}><button className={style.btn} href={'#heroCardContainer'}>Get Started</button></Link>
           <Link href={'/about'}><button className={`${style.btn} ${style.btnSecondary}`}>About Us</button></Link>
